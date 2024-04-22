@@ -36,7 +36,14 @@ body {
     .center{
         text-align: center;
         padding: 1rem;
+
     }
+
+    .center-g{
+        text-align: center;
+        padding-top: 0.2rem;
+    }
+
     /*----------------------------------------  */
 
     /* Parte Header/Sidebar */
@@ -188,10 +195,38 @@ body {
     
     /* Footer/ Nav musica */
 
+    .info{
+        margin-top:1.5rem;
+        font-size: 12px;
+        
+    }
+
     .nav-music{
         height: 5rem;
         background-color: #282828;
         width: 100%;
+    }
+
+    .music-now{
+        display: flex;
+    }
+
+    .img-ft-size{
+        width: 3%;
+        margin: 0.8rem 1rem 0.5rem 1rem;
+    }
+
+    i{
+        color: grey;
+    
+    }
+
+    .fa-heart{
+        margin: 2rem 1rem 1rem 2rem;
+    }
+
+    .fa-folder{
+        margin: 2rem 0 0 0;
     }
 
 
