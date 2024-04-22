@@ -1,5 +1,5 @@
 *{
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
 }
@@ -12,7 +12,7 @@ body {
 }
 
 
-@media screen and (min-width: 992px){
+
     section.big-container{
         width: 100%;
         display: flex;
@@ -32,6 +32,11 @@ body {
     .white-titolo{
         color: white;
     }
+
+    .center{
+        text-align: center;
+        padding: 1rem;
+    }
     /*----------------------------------------  */
 
     /* Parte Header/Sidebar */
@@ -50,12 +55,14 @@ body {
     .main-container{
         height: calc((100vh) - 5rem);
         background-color: #141922;
+        overflow: scroll;
     }
 
     .main-nav{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding-top: 5rem;
     }
 
     div.main-nav ul{
@@ -87,15 +94,64 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: left;
+        padding-bottom: 3rem;
     }
 
     div.music{
-        width: calc(100% / 6);
-}
+        width: calc((100% / 6) - 50px);
+    }
+
     
-    .size-img{
+    div.articles-flex div.music .size-img{
         height: 200px;
         margin-top: 2rem;   
+    }
+
+    /* john doe */
+    
+    .john-doe{
+        padding-left: 1rem;
+        padding-bottom: 3rem
+    }
+
+    div.john-doe p{
+        font-size: 12px;
+        margin-top: 1rem;
+    }
+
+    .john-doe-flex{
+        display: flex;
+    }
+
+    div.john-doe-flex div.music .size-img{
+        width: 100%;
+        margin-top: 2rem;
+        padding-right: 1rem;
+
+    }
+
+
+    /* artisti piu popolari */
+
+    div.popolari p{
+        font-size: 12px;
+        margin-top: 1rem;
+    }
+
+    .popolari{
+        padding-left: 1rem;
+        padding-bottom: 3rem
+    }
+
+    .popolari-flex{
+        display: flex;
+    }
+
+    div.popolari-flex div.music .size-img{
+        width: 100%;
+        margin-top: 2rem;
+        padding-right: 1rem;
+
     }
 
     /* ---------------------------------- */
@@ -107,6 +163,9 @@ body {
     .bg-bt-color{
         background-color: #080b12;
         padding: 1rem 0.3rem 1.6rem 0;
+        position: fixed;
+        left: 15rem;
+        right: 0;
     }
 
     #upgrade{
@@ -137,7 +196,7 @@ body {
 
 
 
-}
+
 
 
 
