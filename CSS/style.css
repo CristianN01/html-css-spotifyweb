@@ -11,3 +11,98 @@ body {
     font-style: normal;
 }
 
+
+@media screen and (min-width: 992px){
+    section.big-container{
+        width: 100%;
+        display: flex;
+        height: calc((100vh) - 5rem);
+        
+    }
+    /* Parte Header/Sidebar */
+    .header-nav{
+        width: 15rem;
+        background-color: #000000;
+        margin: 0;
+        height: 100%;
+    }
+    /* ------------------------------ */
+
+    /* main-nav main/ Recently Played/ creato per john don/ popular */
+    main{
+        width: calc((100vw) - 15rem);
+    }
+    .main-container{
+        height: calc((100vh) - 5rem);
+        background-color: #141922;
+    }
+
+    .main-nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    div.main-nav ul{
+        display: flex;
+        font-size: 13px;
+        margin: 0;
+    }
+
+    div.main-nav ul li{
+        color: #7b7d82;
+        list-style-type: none;
+        padding: 1rem;
+    }
+
+    #hr-yellow{
+        border-bottom: 1px solid #caff31;
+        width: 30px;
+        position: absolute;
+        left: 28rem;
+        top: 7.2rem;
+    }
+
+    /* ---------------------------------- */
+    
+    
+    
+    /* Tasto Effettua l'upgrade */
+    
+    .bg-bt-color{
+        background-color: #080b12;
+        padding: 1rem 0.3rem 1.6rem 0;
+    }
+
+    #upgrade{
+        padding: 0.7rem 2rem 0.7rem 2rem;
+        background-color: #080b12;
+        color: white;
+        border: 1px solid white;
+        border-radius: 50px;
+        font-size: 12px;
+    }
+    
+    #upgrade p{
+        font-weight: 900;
+    }
+    
+    div.piano-upgrade{
+        text-align: end;
+    }
+    /* ------------------------------------ */
+    
+    /* Footer/ Nav musica */
+
+    .nav-music{
+        height: 5rem;
+        background-color: #282828;
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+
