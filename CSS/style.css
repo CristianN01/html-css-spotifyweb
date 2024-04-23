@@ -53,6 +53,111 @@ body {
         margin: 0;
         height: 100%;
     }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 75%;
+    }
+    
+    .nav-sidebar{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #logo{
+        width: 180px;
+        padding: 1rem;
+    }
+
+    .nav-sidebar img{
+        width: 25px;
+        margin-right: 1rem;
+        
+    }
+
+    div.nav-sidebar p, div.installer-flex p{
+        color: #5a5a5a;
+        
+    }
+
+    .svg-flex{
+        display: flex;
+        align-items: center;
+        padding: 0rem 1rem 0rem 1rem;
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+
+    .border{
+        border-left: 3px solid #b7fc31;
+    }
+
+    div.playlist-list ul{
+        list-style-type: none;
+    }
+
+    div.playlist{
+        margin-left: 1rem;
+    }
+
+    div.playlist h3{
+        margin: 1rem 0;
+    }
+
+    div.playlist-list ul li{
+        color: #5a5a5a;
+        margin-bottom: 1rem;
+        font-size: 14px;
+    }
+
+    #add{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .fa-plus{
+        background-color: #a3a3a3;
+        font-size: 25px;
+        padding: 11px;
+        color: black;
+        margin-right: 1rem;
+}
+
+    .installer-flex, .profile{
+        display: flex;
+    }
+
+    .installer-flex i{
+        margin-right: 10px;
+    }
+
+    div.installer-flex p{
+        font-size: 14px;
+    }
+
+    div.install hr{
+        margin: 1rem 0;
+        width: 90%;
+    }
+    
+    .install{
+        margin-left: 1rem;
+    }
+
+    div.profile img{
+        width: 10%;
+    }
+
+    div.profile h3{
+        font-size: 14px;
+        align-content: center;
+        margin-left: 10px;
+    }
+
     /* ------------------------------ */
 
     /* main-nav main/ Recently Played/ creato per john don/ popular */
@@ -67,14 +172,15 @@ body {
 
     .main-nav{
         display: flex;
-        justify-content: center;
+        align-content: center;
         flex-wrap: wrap;
         padding-top: 5rem;
+        flex-direction: column;
     }
 
     div.main-nav ul{
         display: flex;
-        font-size: 13px;
+        font-size: 12px;
         margin: 0;
     }
 
@@ -84,11 +190,11 @@ body {
     }
 
 
-    #hr-yellow{
-        border-bottom: 1px solid #caff31;
-        width: 30px;
-        left: 28rem;
-        top: 7.2rem;
+    .border-bottom{
+        border-bottom: 3px solid #b7fc31;
+        width: 33px;
+        align-self: flex-start;
+        margin-left: 44px;
     }
 
     /* recently played */
