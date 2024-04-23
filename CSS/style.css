@@ -150,6 +150,8 @@ body {
 
     div.profile img{
         width: 10%;
+        background-color: grey;
+        border-radius: 50%;
     }
 
     div.profile h3{
