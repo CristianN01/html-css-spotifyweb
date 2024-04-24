@@ -146,6 +146,7 @@ body {
     
     .install{
         margin-left: 1rem;
+        margin-bottom: 1rem;
     }
 
     div.profile img{
@@ -167,6 +168,11 @@ body {
     /* main{
         width: calc((100vw) - 15rem);
     } */
+
+    div.music h3{
+        font-size: 18px;
+    }
+
     .main-container{
         height: calc((100vh) - 5rem);
         background-color: #141922;
@@ -218,8 +224,9 @@ body {
     }
 
     div.music{
-        width: calc((100% / 6) - 16px);
+        width: calc((100% / 6) - 1rem);
         margin: 0rem 1rem 0rem 0;
+        position: relative;
     }
 
     
@@ -270,7 +277,7 @@ body {
     div.popolari-flex div.music .size-img{
         width: 100%;
         margin-top: 2rem;
-
+        border-radius: 50%;
     }
 
     /* ---------------------------------- */
@@ -285,6 +292,7 @@ body {
         position: fixed;
         left: 15rem;
         right: 0;
+        z-index: 1;
     }
 
     #upgrade{
@@ -344,11 +352,13 @@ body {
         justify-content: center;
         align-items: center;
         align-self: flex-start;
+        padding-top: 1rem;
     }
 
     .bar{
         display: flex;
         align-items: center;
+        position: relative;
     }
 
     div.bar p{
@@ -367,14 +377,16 @@ body {
 
     div.small-bar{
         width: 85px;
-        border: 2px solid #c1c1c1;
         border-radius: 2rem;
+        height: 4px;
+        background-color: white;
     }
 
 
     div.music-bar-nav i.fa-circle-play{
         font-size: 32px;
-        padding: 0.7rem 1.5rem;
+        margin: 0 0;
+        padding: 0;
     }
 
     div.music-bar-nav i{
@@ -399,16 +411,16 @@ body {
 
     div.small-bar-audio{
         width: 20px;
-        border: 2px solid #c1c1c1;
         border-radius: 2rem;
-        height: 1px;
+        height: 4px;
+        background-color: white;
         
     }
 
     .audio{
         width: 170px;
         display: flex;
-        margin-right: 1rem;
+        margin-right: 3rem;
     }
 
     .img-ft-size{
@@ -436,6 +448,94 @@ body {
     .border-bottom-green{
         border-bottom: 2px solid #c6ff31;
     }
+
+    i.hover{
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 2rem;
+        left: 0rem;
+        font-size: 70px;
+        width: 100%;
+        height: 86%;
+        text-align: center;
+        align-content: center;
+        color: white;
+        display: none;
+    }
+
+    i.radius{
+        border-radius: 50%;
+    }
+
+    div.position{
+        position: relative;
+    }
+
+    div.play-size{
+        width: 10%;
+        
+    }
+
+    div.ball{
+        width: 10px;
+        border: 7px solid #c1c1c1;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0px;
+        left: 130px;
+        display: none;
+    }
+
+    div.ball-audio{
+        width: 10px;
+        border: 7px solid #c1c1c1;
+        border-radius: 50%;
+        position: absolute;
+        left: 18px;
+        display: none;
+        top: 8.5px;
+    }
+
+    div.bar-audio{
+        display: flex;
+        position: relative;
+    }
+
+    /* HOVER */
+
+    div.position:hover > i.hover{
+        display: block;
+    }
+
+    li.grey:hover, div.svg-flex p:hover, div.playlist-list ul li:hover, div.installer-flex p:hover,div.playlist-list ul li i.fa-plus:hover, div.info span:hover, div.favorite-folder i:hover {
+        color: white;
+    }
+
+    div.info span:hover{
+        border-bottom: 1px solid white;
+    }
+
+    div.play-size i.fa-circle-play:hover{
+        font-size: 34px;
+        margin: 0rem 0rem;
+        
+    }
+
+    div.bar:hover div.small-bar{
+        background-color: #c6ff31;
+    }
+
+    div.bar:hover > div.ball, div.bar-audio:hover > div.ball-audio{
+        display: block;
+    }
+
+    div.bar-audio:hover div.small-bar-audio{
+        background-color: #c6ff31;
+    }
+
+
+
+
 
 /* breakpoint 992px */
 
@@ -465,7 +565,8 @@ body {
 
     div.small-bar {
         width: 85px;
-        border: 2px solid #c1c1c1;
+        height: 4px;
+        background-color: white;
         border-radius: 2rem;
     }
 
@@ -552,8 +653,8 @@ body {
     }
 
     div.small-bar {
-        width: 50px;
-        border: 2px solid #c1c1c1;
+        height: 4px;
+        background-color: white;
         border-radius: 2rem;
     }
 
@@ -579,6 +680,16 @@ body {
 
     .border-bottom-green{
         border-bottom: 2px solid #c6ff31;
+    }
+
+    div.ball-audio {
+        width: 10px;
+        border: 7px solid #c1c1c1;
+        border-radius: 50%;
+        position: absolute;
+        left: 18px;
+        display: none;
+        top: 8.5px;
     }
 
 }
@@ -733,13 +844,13 @@ body {
         flex-direction: column;
         align-self: flex-start;
         width: 238px;
-        margin-left: 3rem;
+        margin-left: 2rem;
     }
 
     .audio {
         width: 146px;
         display: flex;
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
 
     div.audio i {
@@ -749,7 +860,40 @@ body {
     .border-bottom-green{
         border-bottom: 2px solid #c6ff31;
     }
+
+    div.play-size {
+        width: 18%;
+    }
+    
+    div.small-bar {
+        width: 38px;
+    }
+    
+    div.ball {
+        width: 10px;
+        border: 7px solid #c1c1c1;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0px;
+        left: 86px;
+        display: none;
+    }
+    
+    div.ball-audio {
+        width: 10px;
+        border: 7px solid #c1c1c1;
+        border-radius: 50%;
+        position: absolute;
+        left: 18px;
+        display: none;
+        top: 5.5px;
+    }
+    
+    div.long-bar-audio {
+        width: 80px;
+    }
 }
+
 
 
 
